@@ -2,10 +2,10 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SQLITE = {
-    "default" : {
-        "ENGINE" : "django.db.backends.sqlite3",
-        "NAME" : os.path.join(BaseException, "db/sqlite/db.sqlite3"),
+{
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
