@@ -1,9 +1,9 @@
 from django.urls import path
-from erp.views import myfirstview
+from erp.views import *
 
 urlpatterns =[
-    path("uno/", myfirstview),
-    path("dos/", myfirstview),
+    path("uno/", myfirstview, name="vista"),
+    path("dos/", mysecondview, name="vista2"),
     path("tres/", myfirstview),
     path("cuatro/", myfirstview)
 ]

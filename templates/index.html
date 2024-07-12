@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Titulo</title>
+    </head>
+    <body>
+        <h1>
+            El primer template
+        </h1>
+        {% block content %}
+        <ul>
+        {% for category in categorias %}
+            <li>{{category.id}} / {{category.name}}</li>
+        {% endfor%}
+        </ul>
+        {% endblock %}
+
+        
+        <p>{{ name }}</p>
+    </body>
+</html>
