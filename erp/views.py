@@ -1,4 +1,4 @@
-from django.shortcuts import render
+"""from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from erp.models import *
 # Create your views here.
@@ -15,4 +15,4 @@ def mysecondview(request):
         "products": Product.objects.all()
     }
     return render(request, "second.html", data)
-
+"""
