@@ -21,3 +21,4 @@ def main():
 if __name__ == '__main__':
     main()
 #Curso de Django 3 | ListView | Vistas basadas en clases | Video 26
+#video27 como hacer el declaracion de atributos en django
