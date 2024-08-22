@@ -4,9 +4,9 @@ from erp.models import Category
 class CategoryForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        for form in self.visible_fields():
+        '''for form in self.visible_fields():
             form.field.widget.attrs["class"] = "form-control"
-            form.field.widget.attrs["autocomplete"] = "off"
+            form.field.widget.attrs["autocomplete"] = "off"'''
         self.fields["name"].widget.attrs["autofocus"] = True
 
     class Meta:
@@ -21,7 +21,7 @@ class CategoryForm(ModelForm):
             ),
             "descripcion" : Textarea(
                 attrs={
-                    "placeholder":"Ingrese un nombre",
+                    "placeholder":"Descripción de la tarea",
                     "rows":3,
                     "cols":1
                 }
